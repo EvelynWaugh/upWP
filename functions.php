@@ -129,7 +129,7 @@ add_action( 'ocean_before_content', 'events_gmap_display_block' );
 function events_gmap_display_block() {
 	?>
 	<div id="gmaps"></div>
-	<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU2glZ4NC5x47-lK6D6cSt-ej5oHJSmbs&libraries=places,geometry&callback=initMap"> -->
+	<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&libraries=places,geometry&callback=initMap"> -->
 	</script>
 	<script>
 		function initMap() {
