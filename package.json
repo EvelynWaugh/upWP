@@ -1,0 +1,11 @@
+{
+  "name": "oceanwp",
+  "scripts": {
+    "start-react": "wp-scripts start",
+    "build-react": "wp-scripts build"
+  },
+  "dependencies": {
+    "@wordpress/scripts": "^19.0.0",
+    "classnames": "^2.3.1"
+  }
+}

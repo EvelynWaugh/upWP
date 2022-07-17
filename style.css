@@ -1,0 +1,223 @@
+/*
+Theme Name: OceanWP Child
+Theme URI: https://oceanwp.org/
+Description: OceanWP WordPress theme example child theme.
+Author: Nick
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 1.0
+*/
+
+/* Parent stylesheet should be loaded from functions.php not using @import */
+
+.blog-item-tags {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.blog-item-tags > a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #FF8811;
+}
+.blog-item-tags > a:hover {
+    color: #CC6600;
+}
+.events_extra-cols {
+    height: 48px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.events_extra-cols > p {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.events_extra-cols > p:not(:last-of-type) {
+    margin-right: 10px;
+}
+.date-event {
+    padding: 10px;
+    background-color: #726f70;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 8px;
+}
+.blog-entry.large-entry .thumbnail {
+    height:220px;
+}
+.blog-entry.large-entry .thumbnail img {
+    height: 100%;
+    object-fit: cover;
+}
+.blog-entry.large-entry {
+
+}
+.input-button-clear {
+
+}
+.event_filter_events_madness h3 {
+    margin-bottom: 50px;
+}
+.desc-group {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.location-event {
+    padding: 10px;
+    background-color: #213f3b;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 8px;
+}
+.event_filter_block {
+/* max-width:200px; */
+
+}
+.event_filter_block:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+.event_filter_block ul {
+    list-style: none; 
+   
+    margin: 0;
+    position: relative;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+}
+.event_filter_block ul li a {
+
+display: inline-block;
+margin-bottom: 5px;
+position: relative;
+padding-left: 25px;
+}
+.event_filter_block ul li a::before {
+  
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 1px solid #FF8811;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+.event_filter_block ul li a.active::after {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    display: inline-block;
+    font-size: 10px;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    color: #FF8811;
+    }
+.post-type-archive-events #blog-entries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.post-type-archive-events #content {
+    display: flex;
+}
+.events-posts-filter{
+border: 1.5px solid #EAEBF3;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+border-radius: 8px;
+padding: 14px 24px;
+position: relative;
+cursor: pointer;
+margin-bottom: 60px;
+max-width:360px;
+}
+.events-posts-filter ul {
+position: absolute;
+top: calc(100% + 14px);
+right: 0;
+width: calc(100% - 14px);
+background: #FFFFFF;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+padding: 10px;
+-webkit-box-shadow: 0px 10px 40px rgba(137, 153, 170, 0.15);
+box-shadow: 0px 10px 40px rgba(137, 153, 170, 0.15);
+border-radius: 8px;
+visibility: hidden;
+opacity: 0;
+z-index: 15
+}
+
+.events-posts-filter ul a {
+padding: 14px 20px;
+display: block
+}
+
+.events-posts-filter  ul a:hover {
+background: #DDEBFF;
+border-radius: 6px;    
+}
+.events-posts-filter  ul.active {
+-webkit-transform: translateY(-2px);
+transform: translateY(-2px);
+visibility: visible;
+opacity: 1;
+}
+.sorting-desc {
+color: #8C96A3;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}.sorting-desc > span {
+color: #090C1A;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+}.sorting-desc svg {
+display: inline-block;
+margin-left: 10px;
+-webkit-transition: all 0.3s ease-in;
+transition: all 0.3s ease-in;
+}.sorting-desc svg.active {
+-webkit-transform: rotate(180deg);
+transform: rotate(180deg)
+}
+.date-form-wrapper {
+    display: flex;
+    align-items: center;
+}
+.input-button-clear {
+    display: flex;
+}
+.input-button-clear i {
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.ajax-on {
+    opacity: 0.5;
+}
+
+#gmaps {
+height: 400px;
+width: 100%;
+margin-bottom: 50px;
+  
+}
+@media (min-width: 1700px) {
+    .container {
+        width: 1600px;
+    }
+}

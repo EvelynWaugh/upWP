@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Hege_Icons';
+    src: url('../fonts/bosch_icons.woff') format('woff'),
+         url('../fonts/bosch_icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

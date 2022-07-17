@@ -1,0 +1,1 @@
+{"version":3,"file":"blocks.css","mappings":";;;AAAA;EACI;EAAA;EACA;EAAA;EACA;AACJ,C","sources":["webpack://oceanwp/./assets/css/blocks.scss"],"sourcesContent":[".events-posts-block {\r\n    display: grid;\r\n    grid-template-columns: repeat(3, 1fr);\r\n    grid-gap: 20px\r\n\r\n}"],"names":[],"sourceRoot":""}
