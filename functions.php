@@ -647,3 +647,6 @@ endif;
 	);
 }
 
+//Elementor
+
+require_once get_stylesheet_directory() . '/add-ons/elementor/elementor.php';
