@@ -227,9 +227,9 @@ class Elementor_Text_Widget extends Elementor\Widget_Base {
 
 		$this->start_controls_tab(
 			'style_normal_tab',
-			[
+			array(
 				'label' => esc_html__( 'Normal', 'plugin-name' ),
-			]
+			)
 		);
 
 		// $this->add_control();
@@ -238,13 +238,12 @@ class Elementor_Text_Widget extends Elementor\Widget_Base {
 
 		$this->start_controls_tab(
 			'style_hover_tab',
-			[
+			array(
 				'label' => esc_html__( 'Hover', 'plugin-name' ),
-			]
+			)
 		);
 
 		// $this->add_control();
-
 
 		$this->end_controls_tab();
 
@@ -253,77 +252,77 @@ class Elementor_Text_Widget extends Elementor\Widget_Base {
 
 		$this->start_controls_section(
 			'style_section',
-			[
+			array(
 				'label' => esc_html__( 'Style Section', 'plugin-name' ),
-				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
-			]
-		);
-
-		$this->add_control(
-			'popover-toggle',
-			[
-				'label' => esc_html__( 'Box', 'plugin-name' ),
-				'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
-				'label_off' => esc_html__( 'Default', 'plugin-name' ),
-				'label_on' => esc_html__( 'Custom', 'plugin-name' ),
-				'return_value' => 'yes',
-			]
+				'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
+			)
 		);
 
 		$this->add_responsive_control(
 			'space_between',
-			[
-				'type' => \Elementor\Controls_Manager::SLIDER,
-				'label' => esc_html__( 'Spacing', 'plugin-name' ),
-				'range' => [
-					'px' => [
+			array(
+				'type'            => \Elementor\Controls_Manager::SLIDER,
+				'label'           => esc_html__( 'Spacing', 'plugin-name' ),
+				'range'           => array(
+					'px' => array(
 						'min' => 0,
 						'max' => 100,
-					],
-				],
-				'devices' => [ 'desktop', 'tablet', 'mobile' ],
-				'desktop_default' => [
+					),
+				),
+				'devices'         => array( 'desktop', 'tablet', 'mobile' ),
+				'desktop_default' => array(
 					'size' => 30,
 					'unit' => 'px',
-				],
-				'tablet_default' => [
+				),
+				'tablet_default'  => array(
 					'size' => 20,
 					'unit' => 'px',
-				],
-				'mobile_default' => [
+				),
+				'mobile_default'  => array(
 					'size' => 10,
 					'unit' => 'px',
-				],
-				'selectors' => [
+				),
+				'selectors'       => array(
 					'{{WRAPPER}} h3 i' => 'margin-right: {{SIZE}}{{UNIT}};',
-				],
-			]
+				),
+			)
+		);
+
+		$this->add_control(
+			'popover-toggle',
+			array(
+				'label'        => esc_html__( 'Box', 'plugin-name' ),
+				'type'         => \Elementor\Controls_Manager::POPOVER_TOGGLE,
+				'label_off'    => esc_html__( 'Default', 'plugin-name' ),
+				'label_on'     => esc_html__( 'Custom', 'plugin-name' ),
+				'return_value' => 'yes',
+			)
 		);
 
 		$this->start_popover();
 
 		$this->add_control(
 			'icon',
-			[
-				'label' => esc_html__( 'Icon', 'plugin-name' ),
-				'type' => \Elementor\Controls_Manager::ICONS,
-				'default' => [
-					'value' => 'fas fa-circle',
+			array(
+				'label'       => esc_html__( 'Icon', 'plugin-name' ),
+				'type'        => \Elementor\Controls_Manager::ICONS,
+				'default'     => array(
+					'value'   => 'fas fa-circle',
 					'library' => 'fa-solid',
-				],
-				'recommended' => [
-					'fa-solid' => [
+				),
+				'recommended' => array(
+					'fa-solid'   => array(
 						'circle',
 						'dot-circle',
 						'square-full',
-					],
-					'fa-regular' => [
+					),
+					'fa-regular' => array(
 						'circle',
 						'dot-circle',
 						'square-full',
-					],
-				],
-			]
+					),
+				),
+			)
 		);
 
 		$this->end_popover();
@@ -337,7 +336,7 @@ class Elementor_Text_Widget extends Elementor\Widget_Base {
 		?>
 		<div class="maverick-wrapper">
 			<h3>
-				<?php \Elementor\Icons_Manager::render_icon( $settings['icon'], [ 'aria-hidden' => 'true' ] ); ?>
+				<?php \Elementor\Icons_Manager::render_icon( $settings['icon'], array( 'aria-hidden' => 'true' ) ); ?>
 		
 				<?php echo $settings['title']; ?> 
 			</h3>

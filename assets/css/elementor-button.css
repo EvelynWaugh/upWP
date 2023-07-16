@@ -1,0 +1,13 @@
+.maverick-button {
+	display: inline-flex;
+	align-items: center;
+}
+.maverick-align-icon-left {
+	order: 1;
+}
+.maverick-align-icon-right {
+	order: 2;
+}
+.maverick-button-text {
+	order: 1;	
+}

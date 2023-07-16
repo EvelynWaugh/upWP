@@ -132,8 +132,10 @@ final class OceanWP_Elementor {
 	public function register_widgets( $widgets_manager ) {
 
 		require_once get_stylesheet_directory() . '/add-ons/elementor/widgets/text_widget.php';
+		require_once get_stylesheet_directory() . '/add-ons/elementor/widgets/button.php';
 
 		$widgets_manager->register( new Elementor_Text_Widget() );
+		$widgets_manager->register( new Maverick_Button_Widget() );
 
 	}
 
